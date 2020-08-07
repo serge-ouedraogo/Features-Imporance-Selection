@@ -4,7 +4,7 @@ unsupervised learning algorithm that is used to divide customers for a credit ca
 of each group share in common.
 
 The main steps include: 
-#### Data Inspection
+#### I Data Inspection
   Missing values
 ````
 def missing_value(df):
@@ -13,10 +13,10 @@ def missing_value(df):
     if df[i].isnull().sum()>0:
       df[i].fillna(df[i].mode()[0],inplace=True)
   `````
-  #### Data Exploration
-  2. Identification of correlated features
+  #### II Data Exploration
+  1. Identification of correlated features
   
-  3. Detection and Removal of Outliers
+  2. Detection and Removal of Outliers
   ````
 def outlier(df,columns):
     for i in columns:
@@ -28,7 +28,7 @@ def outlier(df,columns):
         ...
 
   ````
-#### Data Preprocessing 
+#### III Data Preprocessing 
   1. Feature Selection: Removing features with low variance
   ```
   def variance_threshold_selector(df, col):
@@ -52,7 +52,7 @@ def outlier(df,columns):
     ...
    ````
    
-   #### Data Clustering using Gaussian Mixture Model
+   #### IV Data Clustering using Gaussian Mixture Model
   ````
 from sklearn.mixture import GaussianMixture
 from sklearn.metrics import silhouette_score
