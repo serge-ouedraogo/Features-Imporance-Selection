@@ -1,4 +1,5 @@
-# Unsupervised-Learning-Segmenting-Credit-Card-Users
+# Breast Cancer Important Features
+For this project I used a linear regression model to identify the most important features indicative of breast cancer. An exhaustive Exploratory Data Analysis was conducted identify and remove duplicate entries  and outliers. There are some missing values  
 Data segmentation is a technique used to divide a population into groups based on shared behavior or demographics. Here the segmentation consists of an 
 unsupervised learning algorithm that is used to divide customers for a credit card company into specifics group and to extract insights members 
 of each group share in common.
